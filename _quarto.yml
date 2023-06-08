@@ -1,0 +1,68 @@
+project:
+  type: book
+  output-dir: docs
+  resources: resources
+execute:
+  freeze: auto
+book:
+  title: Book Template
+  subtitle: ''
+  author: Me
+  description: Book Description
+  cover-image: images/logos/logo.png
+  image: images/logos/logo.png
+  favicon: images/logos/logo.png
+  cookie-consent: false
+  google-analytics: ''
+  page-navigation: true
+  search: true
+  repo-url: https://github.com/
+  repo-branch: main
+  repo-actions:
+  - edit
+  - issue
+  - source
+  downloads:
+  - pdf
+  - epub
+  sharing:
+  - twitter
+  - facebook
+  - linkedin
+  margin-header: ''
+  page-footer:
+    left: CC-BY 2023 , Me
+    right: ''
+  chapters:
+  - index.qmd
+  - instructions.qmd
+  appendices:
+  - references.qmd
+  - webexercises.qmd
+bibliography: include/references.bib
+csl: include/apa.csl
+format:
+  html:
+    theme:
+      light:
+      - flatly
+      - include/light.scss
+      dark:
+      - darkly
+      - include/dark.scss
+    css:
+    - https://use.fontawesome.com/releases/v5.13.0/css/all.css
+    - include/booktem.css
+    - include/glossary.css
+    - include/style.css
+    - testbook/include/webex.css
+    df-print: kable
+    code-link: true
+    code-fold: false
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: hover
+    highlight-style: a11y
+    include-after-body:
+    - include/script.js
+    - testbook/include/webex.js
